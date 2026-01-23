@@ -1,21 +1,29 @@
-#include <stdio.h> 
+#include <stdio.h>
+
+int is_even(int numero) {
+    if (numero % 2 == 0 ) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
 
 int main(){
+    int numero; 
 
-//Insertar variables.
-    float lado;
-    float area;
-    float volumen;
+    
 
-    printf("Insertar valor:");
-    scanf("%f", &lado);
+    printf("Ingrese un numero: ");
+    scanf("%d", &numero);
 
-    area = lado * lado;
-    volumen = lado * lado * lado;
-
-//Imprimir resultados.
-    printf("Resultado de Area: %.2f\n", area);
-    printf("Resultado de volumen %.2f\n", volumen);
-
-    return 0;
+    if (is_even(numero) == 1) {
+        printf("El numero es par\n");
+    } else {
+        printf("El numero es impar\n");
+    }
+    return 0; //Termino exitosamente.
 }
+
+
+
+//Ayuda!
